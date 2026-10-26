@@ -13,7 +13,7 @@
     <main id="center">  
         <form action="pj1.php" method="get"> 
             <input type="number" name="num1" id="num1"> 
-            <select name="calc" id="calc">
+            <select name="op" id="calc">
               <option value="+">+</option>
               <option value="-">-</option>
               <option value="*">*</option>
@@ -26,7 +26,7 @@
     <?php 
         @$num1 = $_GET ["num1"];
         @$num2 = $_GET ["num2"];
-        @$operador = $_GET ["calc"];
+        @$operador = $_GET ["op"];
 
         switch ($operador) {
             case '+':
